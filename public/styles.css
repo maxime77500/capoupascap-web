@@ -462,6 +462,27 @@ footer .container {
   color: var(--text-muted);
 }
 
+/* Termly Privacy Policy wrapper - keeps the original Termly styling readable on the site's dark theme */
+
+.termly-wrapper {
+  background: #ffffff;
+  color: inherit;
+  border-radius: 16px;
+  padding: 32px;
+  margin-top: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.termly-wrapper a {
+  color: #3030F1;
+}
+
+.termly-wrapper a:hover {
+  color: #3030F1;
+}
+
 /* ── Responsive ───────────────────────────────────────────────────────── */
 
 @media (max-width: 640px) {
@@ -480,5 +501,9 @@ footer .container {
 
   h1 {
     font-size: 28px;
+  }
+
+  .termly-wrapper {
+    padding: 20px;
   }
 }
