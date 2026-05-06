@@ -317,6 +317,46 @@ hr {
   color: var(--text);
 }
 
+/* ── App Store badge ──────────────────────────────────────────────────── */
+
+.cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.appstore-badge {
+  display: inline-block;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.appstore-badge:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+  text-decoration: none;
+}
+
+.appstore-badge:active {
+  transform: translateY(0);
+}
+
+.appstore-badge img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .appstore-badge img {
+    height: 48px;
+  }
+}
+
 /* ── Forms ────────────────────────────────────────────────────────────── */
 
 .form-group {
